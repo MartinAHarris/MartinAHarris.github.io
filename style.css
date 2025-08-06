@@ -39,7 +39,7 @@ footer {
 }
 
 .profile-photo {
-  max-width: 120px;        /* limit the max width */
+  max-width: 140px;        /* limit the max width */
   width: 100%;             /* responsive width */
   border-radius: 8px;      /* optional rounded corners */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
