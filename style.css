@@ -33,6 +33,20 @@ footer {
   color: #777;
 }
 
+.profile-photo-container {
+  text-align: center;      /* centers the image horizontally */
+  margin: 2rem 0 3rem 0;   /* space above and below */
+}
+
+.profile-photo {
+  max-width: 250px;        /* limit the max width */
+  width: 100%;             /* responsive width */
+  border-radius: 8px;      /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+  object-fit: cover;       /* ensures good cropping if needed */
+}
+
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
