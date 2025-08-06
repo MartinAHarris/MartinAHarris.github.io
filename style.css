@@ -6,7 +6,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.5;                /* Ensures 1.5 spacing for all text */
-  background-image: url('background.jpg'); /* Change this path to match your image file */
+  background-image: url('media/background.jpg'); /* Change this path to match your image file */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
