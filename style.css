@@ -10,22 +10,6 @@ body {
   background: transparent; /* Ensure nothing blocks background */
 }
 
-/* === Faded Background Image Layer === */
-html::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('media/background.JPG');  /* Update path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.08;   /* Faded effect */
-  z-index: -1;     /* Behind everything */
-  pointer-events: none;
-}
 
 /* === Layout Elements === */
 header {
