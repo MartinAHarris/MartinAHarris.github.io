@@ -7,14 +7,22 @@
   <style>
     .project {
       display: flex;
+      justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
       margin-bottom: 40px;
-      flex-wrap: wrap;
     }
 
-    .project img {
-      max-width: 300px;
+    .project-text {
+      flex: 1;
+    }
+
+    .project-image {
+      flex: 0 0 300px;
+    }
+
+    .project-image img {
+      max-width: 100%;
       height: auto;
       border: 1px solid #ccc;
     }
@@ -28,11 +36,10 @@
     @media (max-width: 768px) {
       .project {
         flex-direction: column;
-        align-items: flex-start;
       }
 
-      .project img {
-        max-width: 100%;
+      .project-image {
+        width: 100%;
       }
     }
   </style>
@@ -64,26 +71,26 @@
     <h3>Current Projects</h3>
 
     <div class="project">
-      <div>
+      <div class="project-text">
         <strong>The Rheological and Textural Evolution of Moana Loa Lava, Insights from 2022 Eruption:</strong>
         <p>
           This study uses remelt rheology on summit lavas from the 2022 Mauna Loa eruption. Both supra-liquidus and sub-liquidus conditions are simulated to capture viscosity changes across temperature and crystallization states.
         </p>
       </div>
-      <div>
+      <div class="project-image">
         <img src="media/Lava_pour.jpg" alt="Mauna Loa lava flow" />
         <div class="project-caption">Example of Remelt Procedure in High Temperature Laboratory.</div>
       </div>
     </div>
 
     <div class="project">
-      <div>
+      <div class="project-text">
         <strong>The Multiphase Rheology of Natural Lava: Insights from Litli-Hrútur, Iceland:</strong>
         <p>
           This project combines in-situ field viscometry with lab-based remelt rheology to trace the true natural evolution of eruptive viscosity. Findings highlight both the capabilities and limitations of laboratory approximations (<a href="https://doi.org/10.1130/G52558.1" target="_blank">Harris et al. 2024</a>).
         </p>
       </div>
-      <div>
+      <div class="project-image">
         <img src="media/Lava_RV.jpg" alt="Litli-Hrútur fieldwork" />
         <div class="project-caption">In-situ viscometry at Litli-Hrútur, Iceland.</div>
       </div>
@@ -92,26 +99,26 @@
     <h3>Past Projects</h3>
 
     <div class="project">
-      <div>
+      <div class="project-text">
         <strong>Glaciovolcanism within the Mount Meager Volcanic Complex of SW British Columbia:</strong>
         <p>
           This study reconstructed the eruptive history of Cracked Mountain, a tuya near Mount Meager, using physical volcanology techniques (<a href="https://doi.org/10.1016/j.jvolgeores.2022.107477" target="_blank">Harris et al. 2022</a>). Additional mapping and geochronology produced a detailed paleoenvironmental reconstruction of the last 500,000 years in the area (<a href="https://doi.org/10.1139/cjes-2022-0101" target="_blank">Harris et al. 2023</a>).
         </p>
       </div>
-      <div>
+      <div class="project-image">
         <img src="media/glacial recons.jpg" alt="Cracked Mountain tuya" />
         <div class="project-caption">Glacial Reconstruction of Mount Meager Volcanic Complex based on volcanic-landform-based-proxies.</div>
       </div>
     </div>
 
     <div class="project">
-      <div>
+      <div class="project-text">
         <strong>Polymagmatic Sources of a Monogenetic Volcano:</strong>
         <p>
           Petrochemical analyses of Cracked Mountain basalts revealed a bimodal crystal assemblage. Thermodynamic modeling indicated two distinct magma storage conditions prior to eruption (<a href="https://doi.org/10.3389/feart.2022.859794" target="_blank">Harris and Russell 2022</a>).
         </p>
       </div>
-      <div>
+      <div class="project-image">
         <img src="media/CM_phases.jpg" alt="Basalt thin section microscopy" />
         <div class="project-caption">Microscopic view of phenocryst phases in Cracked Mountain basalt.</div>
       </div>
