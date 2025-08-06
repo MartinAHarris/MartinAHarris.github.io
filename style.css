@@ -5,6 +5,12 @@ body {
   padding: 2rem;
   background-color: #f9f9f9;
   color: #333;
+  line-height: 1.5;                /* Ensures 1.5 spacing for all text */
+  background-image: url('background.jpg'); /* Change this path to match your image file */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -34,18 +40,17 @@ footer {
 }
 
 .profile-photo-container {
-  text-align: center;      /* centers the image horizontally */
-  margin: 2rem 0 3rem 0;   /* space above and below */
+  text-align: center;
+  margin: 2rem 0 3rem 0;
 }
 
 .profile-photo {
-  max-width: 140px;        /* limit the max width */
-  width: 100%;             /* responsive width */
-  border-radius: 8px;      /* optional rounded corners */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
-  object-fit: cover;       /* ensures good cropping if needed */
+  max-width: 140px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
 }
-
 
 .gallery {
   display: grid;
