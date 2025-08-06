@@ -17,7 +17,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('media/background.jpg'); /* Update path */
+  background-image: url('media/background.JPG'); /* Update path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
