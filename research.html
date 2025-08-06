@@ -4,6 +4,38 @@
   <meta charset="UTF-8" />
   <title>Research – Martin A. Harris</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .project {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .project img {
+      max-width: 300px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .project-caption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,37 +52,70 @@
   <main>
     <h2>Research</h2>
     <p>
-      My current work focuses on understanding the physical properties of lava, specifically the viscosity of basalts. I use a combined approach of in-situ field techniques and high-temperature laboratory techniques to study how the lava viscosity changes with temperature, crystallinity, vesicularity, and oxygen fugacity.
+      My current work focuses on understanding the physical properties of lava, specifically the viscosity of basalts. I use a combined approach of in-situ field techniques and high-temperature laboratory techniques to study how lava viscosity changes with temperature, crystallinity, vesicularity, and oxygen fugacity.
     </p>
     <p>
-      Additionally, I still have a keen interest in all things related to physical and petrochemical volcanology. Specifically, I am fascinated by magma-ice interactions and the landforms they produce. I have been involved in studies that use the presence (and absence) of glaciovolcanic landforms to reconstruct localized paleoenviroments. I firmly believe this is an underutilized tool in the recovery of past cycles of glaciation.
+      Additionally, I have a keen interest in physical and petrochemical volcanology. I am fascinated by magma-ice interactions and the landforms they produce. I have been involved in studies that use the presence (and absence) of glaciovolcanic landforms to reconstruct localized paleoenviroments—an underutilized tool for understanding past glaciation cycles.
     </p>
     <p>
-      Lastly, I have an interest in shallow magmatic plumbing systems within the crust. I have been involved in petrochemical studies that elucidate monogenetic magma chamber dynamics, storage, and I continue to find the usage of geochemical data conjoined to field observations a fascinating way to gain insight into the magma-crustal dynamics of the Earth.
+      I am also interested in shallow magmatic plumbing systems within the crust. My work includes petrochemical studies that reveal insights into monogenetic magma chamber dynamics and crustal storage conditions, using geochemical data conjoined with field observations.
     </p>
 
     <h3>Current Projects</h3>
-    <ul>
-      <li>
-        <strong>The Rheological and Textural Evolution of Moana Loa Lava, Insights from 2022 Eruption:</strong>  
-        This study employs conventional remelt rheology for the lavas erupted near the summit of Mauna Loa in 2022. Conditions of supra-liquidus and sub-liquidus (at thermal disequilibrium and equilibrium) are simulated to recover the viscosity changes across temperature and crystallization space.
-      </li>
-      <li>
-        <strong>The Multiphase Rheology of Natural Lava: Insights from Litli-Hrútur, Iceland:</strong>  
-        The study is the first to combine in-situ field viscometry with comprehensive laboratory remelt rheology. This combined approach gives insight into the true natural eruptive evolution of viscosity (as highlighted in 
-        <a href="https://doi.org/10.1130/G52558.1" target="_blank">Harris et al. 2024</a>) while also shedding light on the effectiveness and limitations of laboratory experiments.
-      </li>
-    </ul>
+
+    <div class="project">
+      <div>
+        <strong>The Rheological and Textural Evolution of Moana Loa Lava, Insights from 2022 Eruption:</strong>
+        <p>
+          This study uses remelt rheology on summit lavas from the 2022 Mauna Loa eruption. Both supra-liquidus and sub-liquidus conditions are simulated to capture viscosity changes across temperature and crystallization states.
+        </p>
+      </div>
+      <div>
+        <img src="images/mauna-loa.jpg" alt="Mauna Loa lava flow" />
+        <div class="project-caption">Field site at Mauna Loa, 2022 eruption.</div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div>
+        <strong>The Multiphase Rheology of Natural Lava: Insights from Litli-Hrútur, Iceland:</strong>
+        <p>
+          This project combines in-situ field viscometry with lab-based remelt rheology to trace the true natural evolution of eruptive viscosity. Findings highlight both the capabilities and limitations of laboratory approximations (<a href="https://doi.org/10.1130/G52558.1" target="_blank">Harris et al. 2024</a>).
+        </p>
+      </div>
+      <div>
+        <img src="images/litli-hrutur.jpg" alt="Litli-Hrútur fieldwork" />
+        <div class="project-caption">In-situ viscometry at Litli-Hrútur, Iceland.</div>
+      </div>
+    </div>
 
     <h3>Past Projects</h3>
-    <ul>
-      <li>
-        <p><strong>Glaciovolcanism within the Mount Meager Volcanic Complex of SW British Columbia:</strong> This study employs conventional physical volcanology to reconstruct the eruptive history of a transitional explosive and effusive tuya, Cracked Mountain, near the flank of the stratovolcano Mount Meager (<a href="https://doi.org/10.1016/j.jvolgeores.2022.107477" target="_blank">Harris et al. 2022</a>). The work on Cracked Mountain was supported by further mapping of both glaciovolcanic and non-glaciovolcanic landforms around the Mount Meager Volcanic Complex, which, when combined with a series of new geochronology ages, yielded a robust paleoenvironmental reconstruction across the last 500 ka for the localized region (<a href="https://doi.org/10.1139/cjes-2022-0101" target="_blank">Harris et al. 2023</a>).</p>
 
-<p><strong>Polymagmatic Sources of a Monogenetic Volcano:</strong> This study employed petrochemical analyses for the monogenetic Cracked Mountain Tuya basalts, which revealed a bimodal phase assemblage of phenocrysts. Subsequent thermodynamic modeling of the two crystal assemblages revealed distinct crustal conditions requiring two separate storage conditions for the erupted lavas (<a href="https://doi.org/10.3389/feart.2022.859794" target="_blank">Harris and Russell 2022</a>).</p>
+    <div class="project">
+      <div>
+        <strong>Glaciovolcanism within the Mount Meager Volcanic Complex of SW British Columbia:</strong>
+        <p>
+          This study reconstructed the eruptive history of Cracked Mountain, a tuya near Mount Meager, using physical volcanology techniques (<a href="https://doi.org/10.1016/j.jvolgeores.2022.107477" target="_blank">Harris et al. 2022</a>). Additional mapping and geochronology produced a detailed paleoenvironmental reconstruction of the last 500,000 years in the area (<a href="https://doi.org/10.1139/cjes-2022-0101" target="_blank">Harris et al. 2023</a>).
+        </p>
+      </div>
+      <div>
+        <img src="images/cracked-mountain.jpg" alt="Cracked Mountain tuya" />
+        <div class="project-caption">Cracked Mountain tuya near Mount Meager.</div>
+      </div>
+    </div>
 
-      </li>
-    </ul>
+    <div class="project">
+      <div>
+        <strong>Polymagmatic Sources of a Monogenetic Volcano:</strong>
+        <p>
+          Petrochemical analyses of Cracked Mountain basalts revealed a bimodal crystal assemblage. Thermodynamic modeling indicated two distinct magma storage conditions prior to eruption (<a href="https://doi.org/10.3389/feart.2022.859794" target="_blank">Harris and Russell 2022</a>).
+        </p>
+      </div>
+      <div>
+        <img src="images/basalt-thinsection.jpg" alt="Basalt thin section microscopy" />
+        <div class="project-caption">Microscopic view of phenocryst phases in basalt.</div>
+      </div>
+    </div>
   </main>
 
   <footer>
