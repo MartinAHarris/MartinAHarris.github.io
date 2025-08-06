@@ -1,15 +1,14 @@
 /* === Global Styles === */
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
   color: #333;
   position: relative;
   z-index: 1;
 }
 
-/* === Faded Background Image Layer === */
 body::before {
   content: "";
   position: fixed;
@@ -17,14 +16,15 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('media/background.JPG'); /* Update path */
+  background-image: url('media/background.jpg');  /* Change to your actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.08; /* Faded look */
-  z-index: -1;   /* Send behind content */
+  opacity: 0.08; /* Faded effect */
+  z-index: -1;
   pointer-events: none;
 }
+
 
 /* === Layout Elements === */
 header {
