@@ -33,19 +33,44 @@ header {
   margin-bottom: 2rem;
 }
 
+/* Navigation Links */
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #0066cc;
+  color: white;
+  font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #00aaff;
 }
 
 /* Main Content */
 main h2 {
   margin-top: 2rem;
+  color: white;
+}
+
+main p, main li {
+  color: white;
+}
+
+/* Make all links inside main white */
+main a {
+  color: #aadfff;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #ffffff;
+}
+
+/* Figure captions */
+figcaption {
+  color: #cccccc;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* Footer Styling */
@@ -53,7 +78,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #aaa;
 }
 
 /* Profile Photo */
