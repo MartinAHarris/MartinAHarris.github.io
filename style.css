@@ -1,16 +1,22 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
-  background-image: url('media/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;      /* cover the entire viewport */
-  background-position: center; /* center the image */
-  background-attachment: fixed; /* optional: keep background fixed during scroll */
-  color: #333;
-  line-height: 1.5;                /* Ensures 1.5 spacing for all text */
-}
+<style>
+  body {
+    position: relative;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;  /* fixed or absolute */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('media/background.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;  /* Adjust transparency here */
+    z-index: -1;   /* Behind all content */
+  }
+</style>
+
 
 header {
   text-align: center;
