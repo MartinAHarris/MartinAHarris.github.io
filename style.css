@@ -115,3 +115,32 @@ footer {
 .gallery img:hover {
   transform: scale(1.03);
 }
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  color: white;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004a99;
+}
