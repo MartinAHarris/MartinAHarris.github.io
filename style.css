@@ -88,7 +88,7 @@ footer {
 }
 
 .profile-photo {
-  max-width: 200px;
+  max-width: 260px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -98,14 +98,14 @@ footer {
 /* Gallery */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
 
 .gallery img {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
