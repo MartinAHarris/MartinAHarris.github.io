@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   min-height: 100vh;
-  background-color: #000; /* fallback behind background image */
+  background-color: #000;
 }
 
 .background {
@@ -13,9 +13,9 @@ body {
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('media/background.png') no-repeat center center;
   background-size: cover;
-  opacity: 0.3; /* Adjust transparency here */
-  z-index: -1; /* Behind all content */
-  pointer-events: none; /* Allow clicks through */
+  opacity: 0.3;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Layout Containers */
@@ -56,7 +56,6 @@ main p, main li {
   color: white;
 }
 
-/* Make all links inside main white */
 main a {
   color: #aadfff;
   text-decoration: underline;
@@ -66,33 +65,34 @@ main a:hover {
   color: #ffffff;
 }
 
-/* Figure captions */
-figcaption {
-  color: #cccccc;
-  font-size: 0.9rem;
-  text-align: center;
+/* Two-column top section */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-/* Footer Styling */
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Profile Photo */
 .profile-photo-container {
+  flex: 0 0 260px;
   text-align: center;
-  margin: 2rem 0 3rem 0;
 }
 
 .profile-photo {
-  max-width: 260px;
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   object-fit: cover;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-text p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
 }
 
 /* Gallery */
@@ -115,6 +115,24 @@ footer {
 .gallery img:hover {
   transform: scale(1.03);
 }
+
+/* Figure captions */
+figcaption {
+  color: #cccccc;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Forms */
 form {
   max-width: 600px;
   margin: 2rem auto;
